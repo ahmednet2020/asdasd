@@ -1,2 +1,6 @@
-const app = document.querySelector("#app")
-app.textContent = `${app.textContent} ahmed from app`
+import * as jQuery from 'jquery'
+jQuery(($)=>{
+    const nav = $("nav") as JQuery<HTMLElement>
+    console.dir(nav)
+    console.dir($)
+})

@@ -1,0 +1,38 @@
+nav
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-logo
+{
+    flex: 0 0 15%;
+    padding: 0 15px;
+    img
+    {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+.nav-content
+{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 85%;
+}
+.nav-list,
+.nav-setting
+{
+    display: flex;
+    flex-direction: row;
+}
+.nav-list
+{
+    flex: 0 0 80%;
+    justify-content: space-between;
+}
+.nav-setting
+{
+    flex: 0 0 20%;
+    justify-content: space-around;
+}

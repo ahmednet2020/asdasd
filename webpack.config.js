@@ -27,6 +27,7 @@ module.exports = (env, {mode}) => {
           "exclude": /node_modules/,
           "use":[MiniCssExtractPlugin.loader,"css-loader", "postcss-loader", "sass-loader"]
         },
+        // check html file
         {
           "test": /\.(html)$/,
           "exclude": /node_modules/,

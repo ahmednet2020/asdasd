@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before
+{
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-fluid
+{
+    padding: 0;
+    margin: 0;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
