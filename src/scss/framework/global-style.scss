@@ -1,3 +1,9 @@
+$text-color0: #000;
+$text-color1:#424242;
+$icon-color1: #3bb098;
+$icon-color2: #ffbd38;
+$background-color0: #ffffff;
+$background-color1: #f0f0f0;
 *,
 *::after,
 *::before
@@ -7,6 +13,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html
+body,
+.p-font
+{
+    font-family: 'Amiri', serif;
+}
+.h-font
+{
+    font-family: 'Reem Kufi', sans-serif;
 }
 .container-fluid
 {
@@ -20,4 +36,10 @@ li
 a
 {
     text-decoration: none;
+    display: inline-block;
+}
+a,
+button
+{
+    cursor: pointer;
 }

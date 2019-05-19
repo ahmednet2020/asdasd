@@ -2,7 +2,11 @@ nav
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    background-color: $background-color1;
+    padding: 15px;
+    font-size: 16px;
 }
 .nav-logo
 {
@@ -17,14 +21,15 @@ nav
 .nav-content
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: inherit;
     flex: 0 0 85%;
 }
 .nav-list,
 .nav-setting
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: inherit;
+    padding: 0 1em;
 }
 .nav-list
 {
@@ -35,4 +40,69 @@ nav
 {
     flex: 0 0 20%;
     justify-content: space-around;
+}
+.nav-link,
+.setting-link
+{
+    transition: color 0.2s linear;
+    color : $text-color0;
+    &:hover
+    {
+        color: $icon-color1;
+    }
+}
+.close-mobile,
+.toggle-nav
+{
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: $background-color0 ;
+        left: 100%;
+        padding: 15px 30px;
+        will-change: left;
+        width: 100%;
+        transition: left 0.3s ease-in-out;
+        &.show
+        {
+            left: 0;
+        }
+    }
+    .toggle-nav
+    {
+        display: block;
+        font-size: 24px;
+        background-color: transparent;
+        color: $icon-color1;
+    }
+    .close-mobile
+    {
+        display: block;
+        border-bottom: 2px solid $icon-color1;
+        button
+        {
+            font-size: 24px;
+            background-color: transparent;
+            color:$icon-color1;
+            word-spacing: 16px;
+        }
+    }
+    .nav-list,
+    .nav-setting
+    {
+        flex: 0 0 auto;
+    }
+    .nav-link,
+    .setting-link
+    {
+        color : $icon-color1;
+        border: 1px solid $icon-color1;
+        padding: 0.5em 1em;
+        margin: 10px 0;
+    }
 }
